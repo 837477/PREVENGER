@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Elements</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,500" rel="stylesheet">
+
+	<link rel="stylesheet" href="vendor/themify-icons/themify-icons.css">
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="vendor/owl-carousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="hero-banner">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.png" alt="">
+    </a>
+    <div class="container">
+      <h2 class="section-intro__subtitle">통계 1</h2>
+      <div class="btn-group breadcrumb">
+        <a href="index.html" class="btn">홈으로</a>
+      </div>
+    </div>
+  </header>
+
+	<!-- Start Sample Area -->
+	<section class="sample-text-area">
+		<div class="container">
+			<h3 class="text-heading">본 통계 소개</h3>
+			<p class="sample-text">
+				XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+			</p>
+		</div>
+	</section>
+
+	<!-- End Button -->
+	<!-- Start Align Area -->
+	<section class="whole-wrap">
+		<div class="container">
+			<div class="section-top-border">
+				<h3 class="mb-30">소개 1</h3>
+				<div class="row">
+					<div class="col-md-3">
+						<img src="img/elements/d.jpg" alt="" class="img-fluid">
+					</div>
+					<div class="col-md-9 mt-sm-20 left-align-p">
+						<p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+					</div>
+				</div>
+			</div>
+			<div class="section-top-border text-right">
+				<h3 class="mb-30">소개 2</h3>
+				<div class="row">
+					<div class="col-md-9">
+						<p class="text-right">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+					</div>
+					<div class="col-md-3">
+						<img src="img/elements/d.jpg" alt="" class="img-fluid">
+					</div>
+				</div>
+			</div>
+            
+			<div class="section-top-border">
+				<h3 class="mb-30">>????</h3>
+				<div class="row">
+					<div class="col-lg-12">
+						<blockquote class="generic-blockquote">
+							???????????????????????????????????????
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Align Area -->
+
+	<!-- start footer Area -->
+	<footer class="footer footer-bg">
+			<div class="container">
+				<div class="d-sm-flex justify-content-between footer__bottom top-border">
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+					<ul class="social-icons mt-2 mt-sm-0">
+						<li><a href="#/"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#/"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#/"><i class="fab fa-dribbble"></i></a></li>
+						<li><a href="#/"><i class="fab fa-behance"></i></a></li>					
+					</ul>
+				</div>
+			</div>
+		</footer>
+	<!-- End footer Area -->
+
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>	
+	<script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+
+	<script>
+
+		var heroCarousel = $('.heroCarousel');
+		heroCarousel.owlCarousel({
+		loop:true,
+		margin:10,
+		nav: false,
+		startPosition: 1,
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1
+			}
+		}
+		});
+
+		var dropToggle = $('.menu_right > li').has('ul').children('a');
+		dropToggle.on('click', function() {
+			dropToggle.not(this).closest('li').find('ul').slideUp(200);
+			$(this).closest('li').children('ul').slideToggle(200);
+			return false;
+		});
+
+		$( ".toggle_icon" ).on('click', function() {
+			$( 'body' ).toggleClass( "open" );
+		});
+
+		$('select').niceSelect();
+
+	</script>
+</body>
+
+</html>
