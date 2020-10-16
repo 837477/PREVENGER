@@ -22,11 +22,6 @@ CSS3
 JQuery
 ```
 
-## Release History
-
-* 0.0.1
-    * Work in progress
-
 ## Meta
 
 🙋🏻‍♂️ Name: 837477 
