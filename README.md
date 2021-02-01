@@ -1,41 +1,64 @@
+![LICENSE][LICENSE]
+
 # PREVENGER
-> AI 실시간 상황 탐지 시스템 (Front-end)
 
-세종대학교 제 6회 AI 인공지능 해커톤 대회에서 개발한 프로젝트입니다.
 
-개발 포지션은 Front-end로, 첫 프론트 작업 프로젝트였습니다. 
 
-아깝게 본선에는 진출하지 못했지만 프론트 개발을 입문 할 수 있는 좋은 기회였습니다.
+> 세종대학교의 신축 건물인 대양AI센터의 인공지능 영웅으로 Preve + Avengers를 합쳐서, 건물 내에서 발생할 수 있는 모든 위험 상황들을 사전에 탐지하는 시스템
 
-<p><img src="./rdm/main_pg.png"></p>
+
+
+## Reference
+
+- [AI 이용한 실시간 상황 탐지 시스템 Prevenger !](https://837477.github.io/posts/prevenger/post.html)
+
+
+
+## Installation
+
+```sh
+pip install -r requirements.txt
+```
+
+
 
 ## Usage example
 
-index.html을 기준으로 elements.html / projects.html 이 연결이 되어있으며, CSS는 style.css 로 통합하여 사용하였습니다.
-
-## Development - Skill
-
 ```sh
-HTML5
-Javascript
-CSS3
-JQuery
+python3 -m main
 ```
+
+
+
+## Release History
+
+* 1.0
+    * First initialization
+
+
 
 ## Meta
 
-🙋🏻‍♂️ Name: 837477 
+🙋🏻‍♂️ Name: 837477
 
 📧 E-mail: 8374770@gmail.com
 
-📔 Blog: http://837477.pythonanywhere.com
-
 🐱 Github: https://github.com/837477
+
+📔 Blog: https://837477.github.io
+
+
 
 ## Contributing
 
-1. Fork it (<https://github.com/837477/PREVENGER)
+1. Fork this repository
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
+
+
+
+<!-- Markdown link & img dfn's -->
+
+[LICENSE]: https://img.shields.io/github/license/837477/raising_visitor_bot?style=flat-square
